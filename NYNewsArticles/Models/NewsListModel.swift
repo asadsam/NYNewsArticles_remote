@@ -130,3 +130,5 @@ class JSONNull: Codable, Hashable {
         try container.encodeNil()
     }
 }
+
+typealias PopularNewsArticles = [PopularNewsArticlesResponce]

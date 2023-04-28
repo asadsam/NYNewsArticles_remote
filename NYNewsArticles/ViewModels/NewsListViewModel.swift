@@ -16,21 +16,21 @@ protocol NewsListUpdateProtocol:AnyObject
 class NewsListViewModel: NSObject {
     
     // dependency injection
-    var service: NewsListAPIWorker
+    var service: NewsListWebservice
     
-    init(service: NewsListAPIWorker) {
+    init(service: NewsListWebservice) {
         self.service = service
     }
     
     weak var delegate:NewsListUpdateProtocol?
     var newsResultsArray : PopularNewsArticlesResponce?
 
-    func fetchAllEmployees()
+    func fetchNewsArticles()
     {
-        self.service.loadNewsArticles { [unowned self] data, status, error in
+        self.service.fetchNewsArticles{ [unowned self] data, status, error in
             
             if let data = data{
-                self.newsResultsArray = convertDataToModel(data, type: .self)
+                self.newsResultsArray = convertDataToModel(data, type: PopularNewsArticlesResponce.self)
             }
             self.delegate?.fetchNewsFinishedWithSuccess()
         }
