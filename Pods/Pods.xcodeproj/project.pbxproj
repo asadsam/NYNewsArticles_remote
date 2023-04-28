@@ -1,0 +1,964 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E0C724182B0AD4F72563F5F12CD245F /* Pods-NYNewsArticles-NYNewsArticlesUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B37799A8F94B363371061D11E5BCB868 /* Pods-NYNewsArticles-NYNewsArticlesUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		455011BFB270FEA448B2A12FF68AAF57 /* SwiftOverlays.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21EA8A40636646A17448DE22997A1B7 /* SwiftOverlays.swift */; };
+		4E50CBFDBDE5E585BB0E96A666284CB3 /* SwiftOverlays-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03B6FEF71D2CF637C47B590C5682A592 /* SwiftOverlays-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55574AB8C04A9CD0457830E2A3017FA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6ED44BD3825EBA8E8D7D973D4C8EF88B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		733A0E5F425944FB0E948BE187359D7A /* Pods-NYNewsArticlesTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9C4B59D188377C3B56DE113D2A8384 /* Pods-NYNewsArticlesTests-dummy.m */; };
+		81B32B251B12385262B45309D805550C /* Pods-NYNewsArticles-NYNewsArticlesUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5E44F2AD90B6E114304B205616CB68 /* Pods-NYNewsArticles-NYNewsArticlesUITests-dummy.m */; };
+		9010A7AA2D6F037E12B45484F2B40B4C /* SwiftOverlays-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1B81DFC8E592439D69FB7BDE9E6692 /* SwiftOverlays-dummy.m */; };
+		B73A26A2ECEE1DC7AB74055626B069C2 /* Pods-NYNewsArticles-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55538C3D482E8F172B2EA549AAE8C491 /* Pods-NYNewsArticles-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D24073BB40FA7DA636182A99E1C7025A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D4E122549D51DA931F09645F75CB9B04 /* Pods-NYNewsArticles-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A42E7846721A785F702115788A397464 /* Pods-NYNewsArticles-dummy.m */; };
+		D51305E6D5CFFA8039130130A5A69266 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		EF87CE086BCDF60EE5163FB428344CF5 /* Pods-NYNewsArticlesTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 700F7972FC85E0F1FA6F8996245F2583 /* Pods-NYNewsArticlesTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DFAC922EA89EFB065BA91214431374A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8AF215D3EBF510E886AB145D0EFFFCF;
+			remoteInfo = SwiftOverlays;
+		};
+		BFDE9B1726F860F4128251FF76C5D459 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC9A3D6371762BCA66E5E8382D6F2D9;
+			remoteInfo = "Pods-NYNewsArticles";
+		};
+		C7A67398F02C476E852351C8CE9310A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8AF215D3EBF510E886AB145D0EFFFCF;
+			remoteInfo = SwiftOverlays;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00F9BA66A293AFE6EDC6DA7AD894E0D0 /* Pods-NYNewsArticlesTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NYNewsArticlesTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		03B6FEF71D2CF637C47B590C5682A592 /* SwiftOverlays-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftOverlays-umbrella.h"; sourceTree = "<group>"; };
+		0925827A0C08865D5B836EEFD839B969 /* Pods-NYNewsArticles */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NYNewsArticles"; path = Pods_NYNewsArticles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C1A960B52C0CD633FA067B53FB1A0B4 /* SwiftOverlays.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftOverlays.debug.xcconfig; sourceTree = "<group>"; };
+		10F4E4E7DF21803BED63E5BC6F513112 /* Pods-NYNewsArticles-NYNewsArticlesUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NYNewsArticles-NYNewsArticlesUITests-Info.plist"; sourceTree = "<group>"; };
+		1F0ABCF0CD4A2060A544A1C0D0353DDE /* Pods-NYNewsArticles-NYNewsArticlesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NYNewsArticles-NYNewsArticlesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		23D49A1601E0C66A568F3F48B8AD7D67 /* Pods-NYNewsArticlesTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NYNewsArticlesTests"; path = Pods_NYNewsArticlesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A3CB413EF6993AFA80F743F311A66AA /* SwiftOverlays-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftOverlays-Info.plist"; sourceTree = "<group>"; };
+		39A46C78B4985281B01453698C6A4B04 /* Pods-NYNewsArticles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NYNewsArticles.debug.xcconfig"; sourceTree = "<group>"; };
+		4BA790FFC79485D15F8807F1FCEC839A /* Pods-NYNewsArticles-NYNewsArticlesUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NYNewsArticles-NYNewsArticlesUITests.modulemap"; sourceTree = "<group>"; };
+		50F06D1CA69D8BE5A77683EC027CD34A /* SwiftOverlays.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftOverlays.modulemap; sourceTree = "<group>"; };
+		55538C3D482E8F172B2EA549AAE8C491 /* Pods-NYNewsArticles-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NYNewsArticles-umbrella.h"; sourceTree = "<group>"; };
+		62CAF4E1680A984AB08D1599186640F2 /* Pods-NYNewsArticlesTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NYNewsArticlesTests-Info.plist"; sourceTree = "<group>"; };
+		69C603D6FAECDA1A4F6169BFF4EF6BC8 /* Pods-NYNewsArticlesTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NYNewsArticlesTests.modulemap"; sourceTree = "<group>"; };
+		6B5E44F2AD90B6E114304B205616CB68 /* Pods-NYNewsArticles-NYNewsArticlesUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NYNewsArticles-NYNewsArticlesUITests-dummy.m"; sourceTree = "<group>"; };
+		6BD3D0BFE2F943973CCD701105F29EE6 /* Pods-NYNewsArticles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NYNewsArticles.release.xcconfig"; sourceTree = "<group>"; };
+		6E5DEF5E4BB78E9F9A817BE3062C60EC /* Pods-NYNewsArticles-NYNewsArticlesUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NYNewsArticles-NYNewsArticlesUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		700F7972FC85E0F1FA6F8996245F2583 /* Pods-NYNewsArticlesTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NYNewsArticlesTests-umbrella.h"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7BFC413950708F3CE093918C2C949C7C /* SwiftOverlays-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftOverlays-prefix.pch"; sourceTree = "<group>"; };
+		7E108987275B5107938D1E9D4DFFF32B /* Pods-NYNewsArticles-NYNewsArticlesUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NYNewsArticles-NYNewsArticlesUITests-frameworks.sh"; sourceTree = "<group>"; };
+		81FB916977C96F94C6DF194EB5129BD6 /* Pods-NYNewsArticlesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NYNewsArticlesTests.release.xcconfig"; sourceTree = "<group>"; };
+		8A1B81DFC8E592439D69FB7BDE9E6692 /* SwiftOverlays-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftOverlays-dummy.m"; sourceTree = "<group>"; };
+		97CAD359BEA008141DB57A963DE2C4D9 /* Pods-NYNewsArticles-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NYNewsArticles-frameworks.sh"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FFEFAB6BA1464240E6E32BBD035A551 /* SwiftOverlays */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftOverlays; path = SwiftOverlays.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42E7846721A785F702115788A397464 /* Pods-NYNewsArticles-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NYNewsArticles-dummy.m"; sourceTree = "<group>"; };
+		A61276135E767E3776BB98D03284D205 /* Pods-NYNewsArticlesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NYNewsArticlesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB9C4B59D188377C3B56DE113D2A8384 /* Pods-NYNewsArticlesTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NYNewsArticlesTests-dummy.m"; sourceTree = "<group>"; };
+		ADB3AFB6EA8E4B07171B5320EF4B2985 /* SwiftOverlays.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftOverlays.release.xcconfig; sourceTree = "<group>"; };
+		B0312A75F5E749B42893FA8F7BCB42AE /* Pods-NYNewsArticles.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NYNewsArticles.modulemap"; sourceTree = "<group>"; };
+		B37799A8F94B363371061D11E5BCB868 /* Pods-NYNewsArticles-NYNewsArticlesUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NYNewsArticles-NYNewsArticlesUITests-umbrella.h"; sourceTree = "<group>"; };
+		BA4B035901FDAD4398EAC1A9FF14A6E6 /* Pods-NYNewsArticles-NYNewsArticlesUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NYNewsArticles-NYNewsArticlesUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BEFBD795BB7B7755D467BCE6F0F8EAF6 /* Pods-NYNewsArticles-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NYNewsArticles-Info.plist"; sourceTree = "<group>"; };
+		D03E57EFBCDAC07190CCD72FF17634AE /* Pods-NYNewsArticles-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NYNewsArticles-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D5F242699327755819B67774B2E30F8C /* Pods-NYNewsArticles-NYNewsArticlesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NYNewsArticles-NYNewsArticlesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E21EA8A40636646A17448DE22997A1B7 /* SwiftOverlays.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftOverlays.swift; path = SwiftOverlays/SwiftOverlays.swift; sourceTree = "<group>"; };
+		E3A8267BE792382D049A17AF96F310CB /* Pods-NYNewsArticles-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NYNewsArticles-acknowledgements.plist"; sourceTree = "<group>"; };
+		E7EAE8E412417D13B7313F9830CF15EB /* Pods-NYNewsArticles-NYNewsArticlesUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NYNewsArticles-NYNewsArticlesUITests"; path = Pods_NYNewsArticles_NYNewsArticlesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBA593DA7593B092759ADFC11D8E798A /* Pods-NYNewsArticlesTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NYNewsArticlesTests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C281B922DE00C91F4233994176AF0CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51305E6D5CFFA8039130130A5A69266 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE38F310FB0E1B653CE5AD57886C3A3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ED44BD3825EBA8E8D7D973D4C8EF88B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB69DEA0D5DD07CE1BD86F774FCD340A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55574AB8C04A9CD0457830E2A3017FA4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB3EE63951B28098E62721D320943082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D24073BB40FA7DA636182A99E1C7025A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		082B08D2ACE21A602508CD521E9D1E9F /* Pods-NYNewsArticles */ = {
+			isa = PBXGroup;
+			children = (
+				B0312A75F5E749B42893FA8F7BCB42AE /* Pods-NYNewsArticles.modulemap */,
+				D03E57EFBCDAC07190CCD72FF17634AE /* Pods-NYNewsArticles-acknowledgements.markdown */,
+				E3A8267BE792382D049A17AF96F310CB /* Pods-NYNewsArticles-acknowledgements.plist */,
+				A42E7846721A785F702115788A397464 /* Pods-NYNewsArticles-dummy.m */,
+				97CAD359BEA008141DB57A963DE2C4D9 /* Pods-NYNewsArticles-frameworks.sh */,
+				BEFBD795BB7B7755D467BCE6F0F8EAF6 /* Pods-NYNewsArticles-Info.plist */,
+				55538C3D482E8F172B2EA549AAE8C491 /* Pods-NYNewsArticles-umbrella.h */,
+				39A46C78B4985281B01453698C6A4B04 /* Pods-NYNewsArticles.debug.xcconfig */,
+				6BD3D0BFE2F943973CCD701105F29EE6 /* Pods-NYNewsArticles.release.xcconfig */,
+			);
+			name = "Pods-NYNewsArticles";
+			path = "Target Support Files/Pods-NYNewsArticles";
+			sourceTree = "<group>";
+		};
+		1C6F867A5F2CB919DEEE75867A5F2351 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				50F06D1CA69D8BE5A77683EC027CD34A /* SwiftOverlays.modulemap */,
+				8A1B81DFC8E592439D69FB7BDE9E6692 /* SwiftOverlays-dummy.m */,
+				2A3CB413EF6993AFA80F743F311A66AA /* SwiftOverlays-Info.plist */,
+				7BFC413950708F3CE093918C2C949C7C /* SwiftOverlays-prefix.pch */,
+				03B6FEF71D2CF637C47B590C5682A592 /* SwiftOverlays-umbrella.h */,
+				0C1A960B52C0CD633FA067B53FB1A0B4 /* SwiftOverlays.debug.xcconfig */,
+				ADB3AFB6EA8E4B07171B5320EF4B2985 /* SwiftOverlays.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftOverlays";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		98CEE4FC2D7BD64856A8B281D0A694A1 /* SwiftOverlays */ = {
+			isa = PBXGroup;
+			children = (
+				E21EA8A40636646A17448DE22997A1B7 /* SwiftOverlays.swift */,
+				1C6F867A5F2CB919DEEE75867A5F2351 /* Support Files */,
+			);
+			name = SwiftOverlays;
+			path = SwiftOverlays;
+			sourceTree = "<group>";
+		};
+		9BC5A18F35573F87423161A2CD51CF9F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				082B08D2ACE21A602508CD521E9D1E9F /* Pods-NYNewsArticles */,
+				9ECB24B05F25FC430EE6551373CCFE44 /* Pods-NYNewsArticles-NYNewsArticlesUITests */,
+				C332FDF9B61C01C15629582BAFB72866 /* Pods-NYNewsArticlesTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9ECB24B05F25FC430EE6551373CCFE44 /* Pods-NYNewsArticles-NYNewsArticlesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4BA790FFC79485D15F8807F1FCEC839A /* Pods-NYNewsArticles-NYNewsArticlesUITests.modulemap */,
+				BA4B035901FDAD4398EAC1A9FF14A6E6 /* Pods-NYNewsArticles-NYNewsArticlesUITests-acknowledgements.markdown */,
+				6E5DEF5E4BB78E9F9A817BE3062C60EC /* Pods-NYNewsArticles-NYNewsArticlesUITests-acknowledgements.plist */,
+				6B5E44F2AD90B6E114304B205616CB68 /* Pods-NYNewsArticles-NYNewsArticlesUITests-dummy.m */,
+				7E108987275B5107938D1E9D4DFFF32B /* Pods-NYNewsArticles-NYNewsArticlesUITests-frameworks.sh */,
+				10F4E4E7DF21803BED63E5BC6F513112 /* Pods-NYNewsArticles-NYNewsArticlesUITests-Info.plist */,
+				B37799A8F94B363371061D11E5BCB868 /* Pods-NYNewsArticles-NYNewsArticlesUITests-umbrella.h */,
+				D5F242699327755819B67774B2E30F8C /* Pods-NYNewsArticles-NYNewsArticlesUITests.debug.xcconfig */,
+				1F0ABCF0CD4A2060A544A1C0D0353DDE /* Pods-NYNewsArticles-NYNewsArticlesUITests.release.xcconfig */,
+			);
+			name = "Pods-NYNewsArticles-NYNewsArticlesUITests";
+			path = "Target Support Files/Pods-NYNewsArticles-NYNewsArticlesUITests";
+			sourceTree = "<group>";
+		};
+		BA742D0C08F90073EDDA369253B450FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0925827A0C08865D5B836EEFD839B969 /* Pods-NYNewsArticles */,
+				E7EAE8E412417D13B7313F9830CF15EB /* Pods-NYNewsArticles-NYNewsArticlesUITests */,
+				23D49A1601E0C66A568F3F48B8AD7D67 /* Pods-NYNewsArticlesTests */,
+				9FFEFAB6BA1464240E6E32BBD035A551 /* SwiftOverlays */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C332FDF9B61C01C15629582BAFB72866 /* Pods-NYNewsArticlesTests */ = {
+			isa = PBXGroup;
+			children = (
+				69C603D6FAECDA1A4F6169BFF4EF6BC8 /* Pods-NYNewsArticlesTests.modulemap */,
+				00F9BA66A293AFE6EDC6DA7AD894E0D0 /* Pods-NYNewsArticlesTests-acknowledgements.markdown */,
+				EBA593DA7593B092759ADFC11D8E798A /* Pods-NYNewsArticlesTests-acknowledgements.plist */,
+				AB9C4B59D188377C3B56DE113D2A8384 /* Pods-NYNewsArticlesTests-dummy.m */,
+				62CAF4E1680A984AB08D1599186640F2 /* Pods-NYNewsArticlesTests-Info.plist */,
+				700F7972FC85E0F1FA6F8996245F2583 /* Pods-NYNewsArticlesTests-umbrella.h */,
+				A61276135E767E3776BB98D03284D205 /* Pods-NYNewsArticlesTests.debug.xcconfig */,
+				81FB916977C96F94C6DF194EB5129BD6 /* Pods-NYNewsArticlesTests.release.xcconfig */,
+			);
+			name = "Pods-NYNewsArticlesTests";
+			path = "Target Support Files/Pods-NYNewsArticlesTests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E5B780C79D69B06B7EC069A85332BAA2 /* Pods */,
+				BA742D0C08F90073EDDA369253B450FD /* Products */,
+				9BC5A18F35573F87423161A2CD51CF9F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5B780C79D69B06B7EC069A85332BAA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98CEE4FC2D7BD64856A8B281D0A694A1 /* SwiftOverlays */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		545B556530DBF9EFB9DD38323137844B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF87CE086BCDF60EE5163FB428344CF5 /* Pods-NYNewsArticlesTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3BC08AE86E061BD5DD32BF131443EFB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E50CBFDBDE5E585BB0E96A666284CB3 /* SwiftOverlays-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2EB749CE6E43E99952389112E0EB01 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B73A26A2ECEE1DC7AB74055626B069C2 /* Pods-NYNewsArticles-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B593C1889176E95203891EFB93B83D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E0C724182B0AD4F72563F5F12CD245F /* Pods-NYNewsArticles-NYNewsArticlesUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5A89AAEDE59B496A6320DFD51AE7AD42 /* Pods-NYNewsArticles-NYNewsArticlesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B48E9897F55F70DE225D8CBF03A94528 /* Build configuration list for PBXNativeTarget "Pods-NYNewsArticles-NYNewsArticlesUITests" */;
+			buildPhases = (
+				F3B593C1889176E95203891EFB93B83D /* Headers */,
+				4A57989B1BAC37A031A168230C5B8A20 /* Sources */,
+				CB69DEA0D5DD07CE1BD86F774FCD340A /* Frameworks */,
+				ECCCD5AD24ECC15550CBD44DF6839725 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F1468B989DBA5BFA9CC9F01144A0A14 /* PBXTargetDependency */,
+			);
+			name = "Pods-NYNewsArticles-NYNewsArticlesUITests";
+			productName = Pods_NYNewsArticles_NYNewsArticlesUITests;
+			productReference = E7EAE8E412417D13B7313F9830CF15EB /* Pods-NYNewsArticles-NYNewsArticlesUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		8DC9A3D6371762BCA66E5E8382D6F2D9 /* Pods-NYNewsArticles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4220027B33B3AEF35DAEF0B79E7DAAF9 /* Build configuration list for PBXNativeTarget "Pods-NYNewsArticles" */;
+			buildPhases = (
+				EC2EB749CE6E43E99952389112E0EB01 /* Headers */,
+				134DDC757DFA6EA32078567388362B64 /* Sources */,
+				2C281B922DE00C91F4233994176AF0CA /* Frameworks */,
+				8406E4BDB4A2AECF01DB2588AB1F0899 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2EB332E2F2FFD0138BF25A5FF5AA2D2 /* PBXTargetDependency */,
+			);
+			name = "Pods-NYNewsArticles";
+			productName = Pods_NYNewsArticles;
+			productReference = 0925827A0C08865D5B836EEFD839B969 /* Pods-NYNewsArticles */;
+			productType = "com.apple.product-type.framework";
+		};
+		8EF3A7B97478D2FEB09E130E93447261 /* Pods-NYNewsArticlesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F58B0BBF14B912E5FCC23AC24C1B2F8 /* Build configuration list for PBXNativeTarget "Pods-NYNewsArticlesTests" */;
+			buildPhases = (
+				545B556530DBF9EFB9DD38323137844B /* Headers */,
+				F8B0D297754C1FB73268ED830FF76FA5 /* Sources */,
+				DB3EE63951B28098E62721D320943082 /* Frameworks */,
+				5A34DB03A5658AADC23D74F276D4E841 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1408CA3FC33780A73CDB4338601D35D8 /* PBXTargetDependency */,
+			);
+			name = "Pods-NYNewsArticlesTests";
+			productName = Pods_NYNewsArticlesTests;
+			productReference = 23D49A1601E0C66A568F3F48B8AD7D67 /* Pods-NYNewsArticlesTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		C8AF215D3EBF510E886AB145D0EFFFCF /* SwiftOverlays */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58D8D074BA665DF270C892BC3A7F49AD /* Build configuration list for PBXNativeTarget "SwiftOverlays" */;
+			buildPhases = (
+				C3BC08AE86E061BD5DD32BF131443EFB /* Headers */,
+				89090587BD56328C4E8CCD80F6A553B1 /* Sources */,
+				AE38F310FB0E1B653CE5AD57886C3A3E /* Frameworks */,
+				492954EE2C3E1C50CCB80694EFB3E9F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftOverlays;
+			productName = SwiftOverlays;
+			productReference = 9FFEFAB6BA1464240E6E32BBD035A551 /* SwiftOverlays */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = BA742D0C08F90073EDDA369253B450FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC9A3D6371762BCA66E5E8382D6F2D9 /* Pods-NYNewsArticles */,
+				5A89AAEDE59B496A6320DFD51AE7AD42 /* Pods-NYNewsArticles-NYNewsArticlesUITests */,
+				8EF3A7B97478D2FEB09E130E93447261 /* Pods-NYNewsArticlesTests */,
+				C8AF215D3EBF510E886AB145D0EFFFCF /* SwiftOverlays */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		492954EE2C3E1C50CCB80694EFB3E9F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A34DB03A5658AADC23D74F276D4E841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8406E4BDB4A2AECF01DB2588AB1F0899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECCCD5AD24ECC15550CBD44DF6839725 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		134DDC757DFA6EA32078567388362B64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4E122549D51DA931F09645F75CB9B04 /* Pods-NYNewsArticles-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A57989B1BAC37A031A168230C5B8A20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81B32B251B12385262B45309D805550C /* Pods-NYNewsArticles-NYNewsArticlesUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89090587BD56328C4E8CCD80F6A553B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				455011BFB270FEA448B2A12FF68AAF57 /* SwiftOverlays.swift in Sources */,
+				9010A7AA2D6F037E12B45484F2B40B4C /* SwiftOverlays-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8B0D297754C1FB73268ED830FF76FA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				733A0E5F425944FB0E948BE187359D7A /* Pods-NYNewsArticlesTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1408CA3FC33780A73CDB4338601D35D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-NYNewsArticles";
+			target = 8DC9A3D6371762BCA66E5E8382D6F2D9 /* Pods-NYNewsArticles */;
+			targetProxy = BFDE9B1726F860F4128251FF76C5D459 /* PBXContainerItemProxy */;
+		};
+		4F1468B989DBA5BFA9CC9F01144A0A14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftOverlays;
+			target = C8AF215D3EBF510E886AB145D0EFFFCF /* SwiftOverlays */;
+			targetProxy = 4DFAC922EA89EFB065BA91214431374A /* PBXContainerItemProxy */;
+		};
+		D2EB332E2F2FFD0138BF25A5FF5AA2D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftOverlays;
+			target = C8AF215D3EBF510E886AB145D0EFFFCF /* SwiftOverlays */;
+			targetProxy = C7A67398F02C476E852351C8CE9310A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A10CB6A8E8BBF1950EA6A925B733780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81FB916977C96F94C6DF194EB5129BD6 /* Pods-NYNewsArticlesTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NYNewsArticlesTests/Pods-NYNewsArticlesTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NYNewsArticlesTests/Pods-NYNewsArticlesTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1B3152A6C27A69C673551EDCCF1CB953 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADB3AFB6EA8E4B07171B5320EF4B2985 /* SwiftOverlays.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftOverlays/SwiftOverlays-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftOverlays/SwiftOverlays-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftOverlays/SwiftOverlays.modulemap";
+				PRODUCT_MODULE_NAME = SwiftOverlays;
+				PRODUCT_NAME = SwiftOverlays;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		72B2846BC9D57FF22EEC0E205EB7943B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A61276135E767E3776BB98D03284D205 /* Pods-NYNewsArticlesTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NYNewsArticlesTests/Pods-NYNewsArticlesTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NYNewsArticlesTests/Pods-NYNewsArticlesTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7481895AC5D5C20D0AA99970934E8DCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39A46C78B4985281B01453698C6A4B04 /* Pods-NYNewsArticles.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NYNewsArticles/Pods-NYNewsArticles-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NYNewsArticles/Pods-NYNewsArticles.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		751E4F8739DB43B8C2566B0603D6D141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5F242699327755819B67774B2E30F8C /* Pods-NYNewsArticles-NYNewsArticlesUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NYNewsArticles-NYNewsArticlesUITests/Pods-NYNewsArticles-NYNewsArticlesUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NYNewsArticles-NYNewsArticlesUITests/Pods-NYNewsArticles-NYNewsArticlesUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C4DB116BB0813A6AF8B40F75CA613E75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BD3D0BFE2F943973CCD701105F29EE6 /* Pods-NYNewsArticles.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NYNewsArticles/Pods-NYNewsArticles-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NYNewsArticles/Pods-NYNewsArticles.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DD698B789EE7789912B3E424EC343FA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C1A960B52C0CD633FA067B53FB1A0B4 /* SwiftOverlays.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftOverlays/SwiftOverlays-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftOverlays/SwiftOverlays-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftOverlays/SwiftOverlays.modulemap";
+				PRODUCT_MODULE_NAME = SwiftOverlays;
+				PRODUCT_NAME = SwiftOverlays;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E2A3037824BD3A781FCFCC7401803C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F0ABCF0CD4A2060A544A1C0D0353DDE /* Pods-NYNewsArticles-NYNewsArticlesUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NYNewsArticles-NYNewsArticlesUITests/Pods-NYNewsArticles-NYNewsArticlesUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NYNewsArticles-NYNewsArticlesUITests/Pods-NYNewsArticles-NYNewsArticlesUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4220027B33B3AEF35DAEF0B79E7DAAF9 /* Build configuration list for PBXNativeTarget "Pods-NYNewsArticles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7481895AC5D5C20D0AA99970934E8DCB /* Debug */,
+				C4DB116BB0813A6AF8B40F75CA613E75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F58B0BBF14B912E5FCC23AC24C1B2F8 /* Build configuration list for PBXNativeTarget "Pods-NYNewsArticlesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72B2846BC9D57FF22EEC0E205EB7943B /* Debug */,
+				0A10CB6A8E8BBF1950EA6A925B733780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58D8D074BA665DF270C892BC3A7F49AD /* Build configuration list for PBXNativeTarget "SwiftOverlays" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD698B789EE7789912B3E424EC343FA0 /* Debug */,
+				1B3152A6C27A69C673551EDCCF1CB953 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B48E9897F55F70DE225D8CBF03A94528 /* Build configuration list for PBXNativeTarget "Pods-NYNewsArticles-NYNewsArticlesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				751E4F8739DB43B8C2566B0603D6D141 /* Debug */,
+				E2A3037824BD3A781FCFCC7401803C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
