@@ -7,7 +7,7 @@
 
 import UIKit
 import SwiftOverlays
-import SDWebImage
+//import SDWebImage
 
 class NewsListTableViewController: UITableViewController {
         
@@ -63,8 +63,11 @@ class NewsListTableViewController: UITableViewController {
             cell.subTitleLabel.text = article.byline
             cell.dateLabel.text = article.publishedDate
             if let thumbURL = article.media?.first?.mediaMetadata?.first?.url{
-                cell.thumbnailImageView.sd_setImage(with: URL(string: thumbURL), placeholderImage: UIImage(systemName: "pencil.circle"))
+                cell.thumbnailImageView.download(from: URL(string: thumbURL)!, placeholder: UIImage.init(named: "person-placeholder"))
             }
+//            if let thumbURL = article.media?.first?.mediaMetadata?.first?.url{
+//                cell.thumbnailImageView.sd_setImage(with: URL(string: thumbURL), placeholderImage: UIImage(systemName: "pencil.circle"))
+//            }
 
         }
         return cell
