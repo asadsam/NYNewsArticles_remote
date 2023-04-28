@@ -7,33 +7,40 @@
 
 import UIKit
 import SwiftOverlays
+import SDWebImage
 
 class NewsListTableViewController: UITableViewController {
         
     var viewModel = NewsListViewModel(service: WebServiceFactory().createNewsListAPIWorker())
     let reuseIdentifier = "NewsListTableViewCell"
+    var dataIsAlreadyLoaded = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "NY Times Most Popular"
+        self.title = NSLocalizedString("articles_title", comment: "title") //"NY Times Most Popular"
         viewModel.delegate = self
         tableView.register(UINib(nibName: reuseIdentifier, bundle: nil), forCellReuseIdentifier: reuseIdentifier)
 
         // Uncomment the following line to preserve selection between presentations
-        self.clearsSelectionOnViewWillAppear = false
+        // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        fetchNewsArticles()
+        if(!dataIsAlreadyLoaded){
+            fetchNewsArticles()
+        }
     }
     
     @objc func fetchNewsArticles(){
         let text = "Please wait..."
-        //self.showWaitOverlayWithText(text)
+        if let superview = self.view.superview {
+          SwiftOverlays.showCenteredWaitOverlayWithText(superview, text: "Please wait...")
+          //SwiftOverlays.removeAllOverlaysFromView(superview)
+        }
 
         viewModel.fetchNewsArticles()
     }
@@ -56,7 +63,7 @@ class NewsListTableViewController: UITableViewController {
             cell.subTitleLabel.text = article.byline
             cell.dateLabel.text = article.publishedDate
             if let thumbURL = article.media?.first?.mediaMetadata?.first?.url{
-                cell.thumbnailImageView.download(from: URL(string: thumbURL)!, placeholder: UIImage.init(named: "person-placeholder"))
+                cell.thumbnailImageView.sd_setImage(with: URL(string: thumbURL), placeholderImage: UIImage(systemName: "pencil.circle"))
             }
 
         }
@@ -113,12 +120,30 @@ class NewsListTableViewController: UITableViewController {
     
 }
 
+extension NewsListTableViewController {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        if let article = viewModel.newsResultsArray?.results?[indexPath.row] {
+            
+            let detailsViewController = NewsDetailsViewController(article: article)
+            navigationItem.backButtonTitle = ""
+            navigationController?.pushViewController(detailsViewController, animated: true)
+        }
+        
+    }
+}
 
 extension NewsListTableViewController: NewsListUpdateProtocol {
     func fetchNewsFinishedWithSuccess() {
         DispatchQueue.main.async { [unowned self]in
             
-            //SwiftOverlays.removeAllBlockingOverlays()
+            dataIsAlreadyLoaded = true
+            
+            if let superview = self.view.superview {
+              //SwiftOverlays.showCenteredWaitOverlayWithText(superview, text: "Please wait...")
+              SwiftOverlays.removeAllOverlaysFromView(superview)
+            }
+            
             self.tableView.reloadData()
         }
     }

@@ -23,14 +23,14 @@ class NewsListViewModel: NSObject {
     }
     
     weak var delegate:NewsListUpdateProtocol?
-    var newsResultsArray : PopularNewsArticlesResponce?
+    var newsResultsArray : NewsArticlesResponce?
 
     func fetchNewsArticles()
     {
         self.service.fetchNewsArticles{ [unowned self] data, status, error in
             
             if let data = data{
-                self.newsResultsArray = convertDataToModel(data, type: PopularNewsArticlesResponce.self)
+                self.newsResultsArray = convertDataToModel(data, type: NewsArticlesResponce.self)
             }
             self.delegate?.fetchNewsFinishedWithSuccess()
         }

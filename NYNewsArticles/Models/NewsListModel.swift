@@ -12,10 +12,8 @@ import Foundation
 //
 //   let itunesResult = try? JSONDecoder().decode(ItunesResult.self, from: jsonData)
 
-import Foundation
-
-// MARK: - PopularNewsArticlesResponce
-struct PopularNewsArticlesResponce: Codable {
+// MARK: - NewsArticlesResponce
+struct NewsArticlesResponce: Codable {
     let status, copyright: String?
     let numResults: Int?
     let results: [Result]?
@@ -131,4 +129,4 @@ class JSONNull: Codable, Hashable {
     }
 }
 
-typealias PopularNewsArticles = [PopularNewsArticlesResponce]
+typealias PopularNewsArticles = [NewsArticlesResponce]

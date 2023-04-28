@@ -1,16 +1,22 @@
 PODS:
+  - SDWebImage (5.15.6):
+    - SDWebImage/Core (= 5.15.6)
+  - SDWebImage/Core (5.15.6)
   - SwiftOverlays (5.0.1)
 
 DEPENDENCIES:
+  - SDWebImage (~> 5.0)
   - SwiftOverlays (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
+    - SDWebImage
     - SwiftOverlays
 
 SPEC CHECKSUMS:
+  SDWebImage: d47d81bea8a77187896b620dc79c3c528e8906b9
   SwiftOverlays: ab459ea9194b0e96aaccaa00e9ead1bf6d46eef1
 
-PODFILE CHECKSUM: 38a750e0ff3b61748b3fc4b32ee6c4e87b1e07b0
+PODFILE CHECKSUM: 6c4bab9da666632663c42ff684dfcc0cf6e1173a
 
 COCOAPODS: 1.12.1
