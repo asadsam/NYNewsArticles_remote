@@ -36,6 +36,7 @@
 		F824F66829FC5E05009971E9 /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F824F66429FC5E05009971E9 /* NewsDetailsViewController.swift */; };
 		F824F66A29FC5F54009971E9 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F824F66929FC5F54009971E9 /* Article.swift */; };
 		F824F66C29FC6CEA009971E9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F824F66B29FC6CEA009971E9 /* Localizable.strings */; };
+		F824F66F29FC7690009971E9 /* NewsListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F824F66E29FC7690009971E9 /* NewsListViewTests.swift */; };
 		F987BFD54CF10D9949E57BDE /* Pods_NYNewsArticles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B43E1F84E12574E8E711AABD /* Pods_NYNewsArticles.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +98,7 @@
 		F824F66429FC5E05009971E9 /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
 		F824F66929FC5F54009971E9 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		F824F66B29FC6CEA009971E9 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		F824F66E29FC7690009971E9 /* NewsListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				F824F62929FC0FE5009971E9 /* NYNewsArticlesTests.swift */,
+				F824F66E29FC7690009971E9 /* NewsListViewTests.swift */,
 			);
 			path = NYNewsArticlesTests;
 			sourceTree = "<group>";
@@ -569,6 +572,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F824F62A29FC0FE5009971E9 /* NYNewsArticlesTests.swift in Sources */,
+				F824F66F29FC7690009971E9 /* NewsListViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
