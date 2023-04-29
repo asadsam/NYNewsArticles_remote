@@ -9,8 +9,7 @@ A simple app to demonstrate understanding and use of Object Oreinted concepts(OO
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Screens](#setup)
-* [Test cases](#test cases)
+* [Test cases](#testcases)
 
 ## General info
 Most popular articles app
