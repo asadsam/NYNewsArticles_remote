@@ -10,7 +10,7 @@ A simple app to demonstrate understanding and use of Object Oreinted concepts(OO
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Screens](#setup)
-* [Test Cases](#testcases)
+* [Test cases](#testcases)
 
 ## General info
 Most popular articles app
@@ -29,7 +29,7 @@ Project is created with:
 # Architecture
 This project uses MVVM design pattern and project is developed in Swift5.
 
-# Test cases
+## Test cases
 * A simple text case for a view model - passing a mock web service object and see if the control calls the delegate method implemented inside this mock class
 * A simple UI test case - launch the app to fetch and load the most popular articles, then tap on the first cell to see if the deatils are really fetched and loaded
 
