@@ -21,10 +21,11 @@ class NewsListViewTests: XCTestCase {
 
     // MARK: - Test doubles
     class NewsListWebserviceSpy: NewsListWebservice {
+        
         var loadArticles = false
         var newsResultsArray : NewsArticlesResponce?
 
-        func fetchNewsArticles(completionHandler: @escaping CompletionHandlerWS) {
+        func fetchNewsArticles(forPeriod period: Int, completionHandler: @escaping CompletionHandlerWS) {
             loadArticles = true
             
             guard let jsonData = readLocalJsonFile() else {
@@ -71,6 +72,7 @@ class NewsListViewTests: XCTestCase {
         newsListWebserviceSpy.loadArticles,
         "fetchArticles() should ask the webservicemanager to fetch the articles"
       )
+        
         let expectation = self.expectation(description: "fetcharticles() is dispatched asynchronously hence we could wait for a while")
             DispatchQueue.main.async {
                 expectation.fulfill()
