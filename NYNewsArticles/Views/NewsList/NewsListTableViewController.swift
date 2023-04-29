@@ -162,7 +162,6 @@ extension NewsListTableViewController: NewsListUpdateProtocol {
             SwiftOverlays.showTextOverlay(self.tableView, text: "Missing Data")
         default :
             SwiftOverlays.showTextOverlay(self.tableView, text: "Fetching Failed")
-
         }
     }
 }
