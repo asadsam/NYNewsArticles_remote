@@ -80,6 +80,9 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="y9s-dz-ilt"/>
+            <accessibility key="accessibilityConfiguration" identifier="tableviewcell">
+                <bool key="isElement" value="YES"/>
+            </accessibility>
             <connections>
                 <outlet property="dateLabel" destination="OnM-ue-CKC" id="T0a-UO-mWr"/>
                 <outlet property="subTitleLabel" destination="HIe-Wi-oJ0" id="Nxr-vI-q1Q"/>

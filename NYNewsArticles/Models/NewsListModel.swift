@@ -13,7 +13,11 @@ import Foundation
 //   let itunesResult = try? JSONDecoder().decode(ItunesResult.self, from: jsonData)
 
 // MARK: - NewsArticlesResponce
-struct NewsArticlesResponce: Codable {
+struct NewsArticlesResponce: Codable, Equatable {
+    static func == (lhs: NewsArticlesResponce, rhs: NewsArticlesResponce) -> Bool {
+        return lhs.results?.last?.title == rhs.results?.first?.title
+    }
+    
     let status, copyright: String?
     let numResults: Int?
     let results: [Result]?
