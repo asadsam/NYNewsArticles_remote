@@ -150,4 +150,19 @@ extension NewsListTableViewController: NewsListUpdateProtocol {
             self.tableView.reloadData()
         }
     }
+    
+    func fetchNewsFailedWithError() {
+        
+        dataIsAlreadyLoaded = false
+        
+        switch viewModel.newsError {
+        case .invalidURL :
+            SwiftOverlays.showTextOverlay(self.tableView, text: "Invalid URL")
+        case .missingData :
+            SwiftOverlays.showTextOverlay(self.tableView, text: "Missing Data")
+        default :
+            SwiftOverlays.showTextOverlay(self.tableView, text: "Fetching Failed")
+
+        }
+    }
 }

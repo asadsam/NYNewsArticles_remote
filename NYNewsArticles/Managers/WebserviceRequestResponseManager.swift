@@ -7,8 +7,33 @@
 
 import Foundation
 
+enum MediaError: Error {
+    case invalidURL
+    case missingData
+    case decodingError
+    case unknown(Error)
+    
+    var errorDescription: String? {
+        switch self {
+        case .invalidURL:
+            return "InvalidURL"
+        case .missingData:
+            return "MissingData"
+        case .decodingError:
+            return "DecodingError"
+        case .unknown:
+            return "UnknownError"
+        }
+    }
+}
+
+struct ErrorType: Identifiable {
+    var id = UUID()
+    var error: MediaError
+}
+
 protocol WebserviceRequestResponseProtocol {
-    typealias CompletionHandler = (Data?, URLResponse?, Error?,Bool) -> Void
+    typealias CompletionHandler = (Data?, URLResponse?, MediaError?,Bool) -> Void
     
     func executePostRequest(url:String,bodyData:Data,completionHandler: @escaping CompletionHandler)}
 
@@ -24,6 +49,8 @@ class WebserviceRequestResponseManager: NSObject
     {
         guard let url = URL(string: url) else {
             print("Error: cannot create url")
+            
+            completionHandler(nil, nil, MediaError.invalidURL, false)
             return
         }
         var urlRequest = URLRequest(url: url)
@@ -55,18 +82,17 @@ class WebserviceRequestResponseManager: NSObject
                         isSuccess = false
                     }
                     completionHandler(data, response, error, isSuccess)
-                    
                 }
             }
-            
         })
         task.resume()
     }
+    
     public func executeGetRequest(url:String,completionHandler: @escaping CompletionHandler)
     {
         guard let url = URL(string: url) else {
             print("Error: cannot create url")
-            completionHandler(nil , nil, nil, false)
+            completionHandler(nil, nil, MediaError.invalidURL, false)
             return
         }
         var urlRequest = URLRequest(url: url)

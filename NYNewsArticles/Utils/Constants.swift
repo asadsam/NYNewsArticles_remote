@@ -14,8 +14,14 @@ struct Constants {
     struct Urls {
         
         static func mostPopularArticles(forDays period: Int) -> String {
-            return "https://api.nytimes.com/svc/mostpopular/v2/mostviewed/all-sections/\(period).json?api-key=31iiHrjxfbQ8I45ZN6vdocYDJ2bdkAOz"
+            return "" //"https://api.nytimes.com/svc/mostpopular/v2/mostviewed/all-sections/\(period).json?api-key=31iiHrjxfbQ8I45ZN6vdocYDJ2bdkAOz"
         }
+    }
+    
+    enum period: Int {
+        case minimum = 1
+        case intermediate = 7
+        case maximum = 30
     }
 }
 

@@ -8,25 +8,25 @@
 import Foundation
 
 protocol NewsListWebservice {
-    typealias CompletionHandlerWS = (Data?, Bool, Error?) -> Void
+    typealias CompletionHandlerWS = (Data?, Bool, MediaError?) -> Void
 
-    func fetchNewsArticles(completionHandler: @escaping CompletionHandlerWS)
+    func fetchNewsArticles(forPeriod period: Int, completionHandler: @escaping CompletionHandlerWS)
 }
 
 // to be used for testing by providing some mock data
 class FakeNewsListAPIWorker: NewsListWebservice {
-    func fetchNewsArticles(completionHandler: @escaping CompletionHandlerWS) {
+    func fetchNewsArticles(forPeriod period: Int, completionHandler: @escaping CompletionHandlerWS) {
         
     }
 }
 
 class NewsListAPIWorker: NewsListWebservice {
     
-    func fetchNewsArticles(completionHandler: @escaping CompletionHandlerWS) {
+    func fetchNewsArticles(forPeriod period: Int, completionHandler: @escaping CompletionHandlerWS) {
         
-        WebserviceRequestResponseManager.sharedInstance.executeGetRequest(url: Constants.Urls.mostPopularArticles(forDays: 7)) {data, response, error, status in
+        WebserviceRequestResponseManager.sharedInstance.executeGetRequest(url: Constants.Urls.mostPopularArticles(forDays: period)) {data, response, error, status in
             
-            completionHandler(data,status,error)
+            completionHandler(data,status,error as? MediaError)
         }
     }
 }
